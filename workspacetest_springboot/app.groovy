@@ -1,9 +1,11 @@
 @RestController
 class ThisWillActuallyRun {
 
+    int count=0;
     @RequestMapping("/")
     String home() {
-        "Hello World!"
+        count++;
+        return "hola mundo";        
     }
 
 }
