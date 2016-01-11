@@ -1,0 +1,33 @@
+package hello;
+
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+@EnableAutoConfiguration
+public class SampleController {
+
+    private int count=0;
+    
+    
+    @RequestMapping("/response_even_request")
+    @ResponseBody
+    public String responseEventRequest() {
+        count++;
+        if( count %2 ==0){
+            while (true){
+
+            }
+        }
+        return "Hello World! "+count;
+    }
+
+    
+    @RequestMapping("/response_all_request")
+    public String responseAllRequest(){
+    	return "I Always say's Hello";
+    }
+    
+}
