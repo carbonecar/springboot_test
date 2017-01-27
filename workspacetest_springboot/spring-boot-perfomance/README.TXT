@@ -4,7 +4,7 @@ These projects has two webservices:
    odd request
 
 hello-springboot-java
-    run using springboot mvn spring-run hello-springboot-java.jar
+    run using springboot:  mvn spring-boot:run 
 hello-springboot-jboss
     run deploying in jboss-eap6.
 
